@@ -3,7 +3,8 @@ from reiter.events.meta import EventsCenter
 
 class Dispatcher(EventsCenter):
 
-    def available_dispatch_keys(self):
+    @property
+    def dispatch_keys(self):
         return self.subscribers.keys()
 
     def dispatch(self, *args, **kwargs):
