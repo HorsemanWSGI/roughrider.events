@@ -36,7 +36,7 @@ def test_dispatch():
     def only_for_car(item, **kwargs):
         found.append('I have a car.')
 
-    assert list(mc.dispatch_keys) == []
+    assert list(mc.dispatch_keys) == ['car']
 
     app.notify('object_added', Item('bus'))
     assert found == []
