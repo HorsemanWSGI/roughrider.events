@@ -1,9 +1,10 @@
 from dataclasses import dataclass, field
+from reiter.events.registry import Subscribers
 
 
 @dataclass
 class EventsCenter:
-    subscribers: dict = field(default_factory=registries.Subscribers)
+    subscribers: dict = field(default_factory=Subscribers)
 
     def subscribe(self, *args, **kwargs):
         return self.subscribers.subscribe(*args, **kwargs)
