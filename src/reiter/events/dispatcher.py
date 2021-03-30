@@ -12,4 +12,5 @@ class Dispatcher(EventsCenter):
 
     def __call__(self, *args, **kwargs):
         key = self.dispatch(*args, **kwargs)
-        self.notify(key, *args, **kwargs)
+        if key is not None:
+            self.notify(key, *args, **kwargs)
