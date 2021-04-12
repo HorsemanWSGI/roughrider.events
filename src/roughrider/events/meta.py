@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from reiter.events.registry import Subscribers
+from roughrider.events.registry import Subscribers
 
 
 @dataclass

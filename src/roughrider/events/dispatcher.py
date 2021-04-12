@@ -1,4 +1,4 @@
-from reiter.events.meta import EventsCenter
+from roughrider.events.meta import EventsCenter
 
 
 class Dispatcher(EventsCenter):
