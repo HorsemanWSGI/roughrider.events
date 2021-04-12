@@ -1,4 +1,4 @@
-from reiter.events import registry
+from roughrider.events import registry
 
 
 def test_subscribers():

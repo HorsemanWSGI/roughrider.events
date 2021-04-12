@@ -9,6 +9,7 @@ install_requires = [
 ]
 
 test_requires = [
+    'pytest'
 ]
 
 

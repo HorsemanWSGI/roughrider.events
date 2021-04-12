@@ -1,5 +1,5 @@
-from reiter.events.meta import EventsCenter
-from reiter.events.dispatcher import Dispatcher
+from roughrider.events.meta import EventsCenter
+from roughrider.events.dispatcher import Dispatcher
 
 
 class Application(EventsCenter):
